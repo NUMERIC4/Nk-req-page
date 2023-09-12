@@ -1,1 +1,39 @@
-div{background-color:black;color:white;}
+.header {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 64px 256px 1fr 120px 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.logo1,
+.logo2 {
+    object-fit: cover;
+}
+
+.logo2 {
+    width: 50%;
+}
+
+.signUpButton {
+    background-color: rgb(41, 143, 133);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttonBig {
+    padding: 15px 25px;
+    font-size: 17px;
+}
+
+.buttonSmall {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.menuButton {
+    text-decoration: none;
+    color: rgb(41, 143, 133);
+}
