@@ -1,39 +1,87 @@
-.header {
-    padding-left: 10px;
-    display: grid;
-    grid-template-columns: 64px 256px 1fr 120px 50px;
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+
+}
+
+.menuBar>*{
+    display: flex;
+    align-items: baseline;
+}
+.menuBar{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.logo{
+    justify-content: flex-start;
     align-items: center;
+    padding: 5px 0px 0px 15px;
+}
+
+.logo>*{padding: 0px 5px;}
+
+.logoBox{margin-right: 15px;}
+
+.menuButtons{
     justify-content: center;
-    column-gap: 10px;
 }
 
-.logo1,
-.logo2 {
-    object-fit: cover;
+.menuButtons>*{
+    margin: 0px 5px 5px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
-.logo2 {
-    width: 50%;
+.menuButtons>*:hover{
+    color: turquoise;
 }
 
-.signUpButton {
-    background-color: rgb(41, 143, 133);
-    border-style: none;
+.preferancesMenu{
+    justify-content: flex-end;
+}
+
+.headerButton{
+    border: 1px solid ; 
     border-radius: 5px;
+    margin: 0px 5px;
+    padding: 5px;   
+}
+
+.loginButton, .signUpButton:hover{
+    background-color: white;
+    border-color: rgb(52, 174, 161);
+    color: rgb(52, 174, 161);
+}
+
+.loginButton:hover, .signUpButton{
+    background-color: rgb(52, 174, 161);
+    border-color: white;
     color: white;
 }
 
-.buttonBig {
-    padding: 15px 25px;
-    font-size: 17px;
+/* .headerButton:hover{
+    padding: 12px 24px;
+    font-size: 30px;
+} */
+
+.prText{
+    width: 45%;
+    margin: 25px 5px 5px 100px;
 }
 
-.buttonSmall {
-    padding: 10px;
-    font-size: 14px;
-}
+.prText>*{font-family: 'Times New Roman', Times, serif;}
 
-.menuButton {
-    text-decoration: none;
-    color: rgb(41, 143, 133);
+.prText>h2{font-size: 50px;}
+.prText>p{font-size: 30px; margin-top: 10px;}
+
+.prTextButton{
+    padding: 20px 50px;
+    margin: 15px 0px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
 }
